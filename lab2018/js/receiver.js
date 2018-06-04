@@ -49,9 +49,10 @@ playerManager.setMessageInterceptor(
 	            request.media.contentType = 'application/x-mpegurl';
 
 	            // Add metadata
-	            var metadata = new cast.receiver.media.MovieMediaMetadata();
-	            metadata.metadataType = cast.receiver.media.MetadataType.MOVIE;
-	            metadata.type = cast.receiver.media.MetadataType.MOVIE;
+//	            var metadata = new cast.receiver.media.MovieMediaMetadata();
+//	            metadata.metadataType = cast.receiver.media.MetadataType.MOVIE;
+//	            metadata.type = cast.receiver.media.MetadataType.MOVIE;
+			  var metadata = cast.framework.messages.GenericMediaMetadata();
 	            metadata.title = item.title;
 	            metadata.subtitle = item.author;
 
